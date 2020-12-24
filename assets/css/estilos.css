@@ -1,0 +1,410 @@
+/*=========Estilos Generales==========*/
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+}
+
+.blur {
+    filter: blur(4px) !important;
+}
+
+
+/*=========Estilos Pantalla de inicio==========*/
+
+.titulo {
+    color: #F4B608;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: -20%;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitulo {
+    color: #FF5200;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.btnIniciar {
+    background-image: url(../img/fondo-btn-iniciar.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 100px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 0px;
+    color: #FF5200;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 auto;
+    border: none;
+    margin-top: 32px;
+    outline: none !important;
+}
+
+.btnIniciar:active {
+    transform: scale(0.9);
+}
+
+
+/*Planetas*/
+
+.planeta {
+    width: 80%;
+    position: absolute;
+    top: 70%;
+}
+
+.planeta1 {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    right: 40px;
+}
+
+.planeta2 {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 40px;
+}
+
+.rocas {
+    width: 30%;
+    position: absolute;
+    top: 70%;
+}
+
+.rocas1 {
+    width: 30%;
+    position: absolute;
+    left: 40px;
+    top: 170%;
+}
+
+.rocas3 {
+    width: 40%;
+    position: absolute;
+    right: 40px;
+    top: 130%;
+}
+
+.rocas2 {
+    width: 30%;
+    position: absolute;
+    right: 30px;
+    top: 270%;
+}
+
+.nave {
+    width: 30%;
+    position: absolute;
+    left: 30px;
+    top: 205%;
+}
+
+
+/*=========Estilos Juego==========*/
+
+.tableroCanvas {
+    width: 400px;
+    height: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    background-image: url(../img/tablero.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedorCanvas {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+canvas {
+    width: 100%;
+}
+
+.contenedorJuego .titulo {
+    color: #F4B608;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+
+.contenedorMarcador {
+    background-image: url(../img/marcador.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorMarcador .titulo {
+    color: #F4B608;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.contenedorMarcador .jugadores {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedorMarcador .jugadores p {
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+}
+
+.contenedorMarcador .victorias {
+    background-image: url(../img/numero-marcador.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.btnJuego {
+    background-image: url(../img/fondo-btn.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 70px;
+    display: block;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 0px;
+    color: #FF5200;
+    font-weight: bold;
+    margin: 0 auto;
+    border: none;
+    margin-top: 12px;
+    outline: none !important;
+}
+
+.btnJuego:active {
+    transform: scale(0.9);
+}
+
+
+/*=========Modales==========*/
+
+.modal-dialog {
+    max-width: 400px !important;
+    width: 400px !important;
+}
+
+.modal-content {
+    background-image: url(../img/marcador.png);
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 20px 50px;
+}
+
+.modal-title {
+    font-size: 25px;
+}
+
+.modal-body .contInput {
+    background-image: url(../img/fondo-input.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 13px 10px;
+}
+
+.modal-body .contInput input {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: transparent;
+    color: #FF5200;
+    outline: none;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#jugadores,
+#ganador {
+    pointer-events: none;
+}
+
+.modal-footer .btnJuego {
+    width: 130px;
+    font-size: 15px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+
+/*=========Animaciones==========*/
+
+.animarInicio {
+    position: relative;
+    animation-name: animar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animar {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+@-webkit-keyframes animar {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+.animarJuego {
+    position: relative;
+    animation-name: animar2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animar2 {
+    from {
+        top: -100%;
+    }
+    to {
+        top: -200%;
+    }
+}
+
+@-webkit-keyframes animar2 {
+    from {
+        top: -100%;
+    }
+    to {
+        top: -200%;
+    }
+}
+
+
+/*=========Responsivo==========*/
+
+@media (max-width: 1200px) {
+    .contenedorMarcador .jugadores p {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contenedorMarcador {
+        display: none;
+    }
+    .planeta1 {
+        top: 30%;
+    }
+    .planeta2 {
+        top: 2%;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-dialog {
+        max-width: 300px !important;
+        width: 300px !important;
+        margin: 0 auto !important;
+    }
+    .modal-content {
+        padding: 20px 20px;
+    }
+    .modal-footer .btnJuego {
+        width: 100px;
+        font-size: 10px;
+        height: 40px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 520px) {
+    .tableroCanvas {
+        width: 300px;
+        height: 400px;
+        padding: 25px;
+    }
+    .contenedorJuego .titulo {
+        font-size: 40px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .btnIniciar {
+        width: 220px;
+        height: 80px;
+        font-size: 20px;
+        margin: 0 auto;
+        border: none;
+        margin-top: 32px;
+        outline: none;
+    }
+    .planeta1 {
+        top: 20%;
+    }
+    .planeta2 {
+        top: 10%;
+    }
+}
