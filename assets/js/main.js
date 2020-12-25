@@ -589,6 +589,7 @@ function limpiar() {
     C3 = null;
     document.getElementById("seccionJuego").classList.remove("blur");
     ganador = false;
+    tiradas = 0;
 }
 
 //Limpiar Tablero
